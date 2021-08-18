@@ -10,16 +10,16 @@ public class MavenClass {
 
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Give us a word: ");
+        System.out.println("Please provide us a word: ");
         String usrWrd = input.nextLine();
         System.out.printf("You entered: %s\n", usrWrd);
-        String isWordANumberMessage;
+        String isWrdANmbrMsg;
         if (StringUtils.isNumeric(usrWrd)) {
-            isWordANumberMessage = "Is a number";
+            isWrdANmbrMsg = "Is a number";
         } else {
-            isWordANumberMessage = "Is NOT a number";
+            isWrdANmbrMsg = "Is NOT a number";
         }
-        System.out.printf("\"%s\" %s\n", usrWrd, isWordANumberMessage);
+        System.out.printf("\"%s\" %s\n", usrWrd, isWrdANmbrMsg);
         System.out.printf("Flipped Case: %s\n",StringUtils.swapCase(usrWrd));
         System.out.printf("Reversed: %s\n", StringUtils.reverse(usrWrd));
     }
